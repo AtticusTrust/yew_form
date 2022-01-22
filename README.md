@@ -93,13 +93,9 @@ fn create(_props: Self::Properties, link: ComponentLink<Self>) -> Self {
 Fields can then be added to the form as follows:
 ```html
 <Field<Registration> 
-    form=&self.form 
-<<<<<<< HEAD
+    form=&self.form
     field_name="first_name"
     autocomplete="given-name"
-=======
-    field_name="first_name" 
->>>>>>> 0ab668b7f3fb9ba13e1e0d4d97bee619280f3a3d
     oninput=self.link.callback(|_: InputData| AppMessage::Update) />
 
 <!-- here we use custom css classes -->
